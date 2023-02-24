@@ -2,8 +2,7 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 14.21.2
+    
     commands:
       - npm i npm@latest -g
       - npm cache clean --force
