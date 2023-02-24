@@ -6,9 +6,7 @@ phases:
       nodejs: 18
     
     commands:
-      - npm i npm@latest -g
-      - npm cache clean --force
-      - rm -rf node_modules package-lock.json
+    
       - npm install
   build:
     commands:
