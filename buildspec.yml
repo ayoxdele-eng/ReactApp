@@ -2,12 +2,13 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18
-    
+  
     commands:
-    
+      - apt-get update -y
+      - curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - 
+      - apt-get install -y nodejs
       - npm install
+    
   build:
     commands:
       - npm run build
